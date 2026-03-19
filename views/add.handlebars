@@ -1,0 +1,12 @@
+{{> rows rows=rows disabled=true}}
+
+<form action="/Add" method="POST">
+    <input name="name" placeholder="name" required>
+    <input name="phone" placeholder="phone" required>
+
+    <button type="submit">Добавить</button>
+</form>
+
+<br>
+
+{{{cancel}}}

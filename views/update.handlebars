@@ -1,0 +1,20 @@
+{{> rows rows=rows disabled=true}}
+
+<form action="/Update" method="POST">
+    <input type="hidden" name="id" value="{{row.id}}">
+
+    <input name="name" value="{{row.name}}" required>
+    <input name="phone" value="{{row.phone}}" required>
+
+    <button type="submit">Изменить</button>
+</form>
+
+<form action="/Delete" method="POST">
+    <input type="hidden" name="id" value="{{row.id}}">
+
+    <button id="deleteBtn">Удалить</button>
+</form>
+
+<br>
+
+{{{cancel}}}

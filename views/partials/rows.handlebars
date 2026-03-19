@@ -1,0 +1,17 @@
+<div class="scroll">
+    <ul>
+    {{#each rows}}
+        <li>
+            {{#if ../disabled}}
+                <span class="row-disabled">
+                    {{name}} : {{phone}}
+                </span>
+            {{else}}
+                <a href="/Update?id={{id}}">
+                    {{name}} : {{phone}}
+                </a>
+            {{/if}}
+        </li>
+    {{/each}}
+    </ul>
+</div>
